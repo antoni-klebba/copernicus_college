@@ -1,0 +1,39 @@
+div.top_bar {
+  color: black;
+  background-color: #242c42;
+  display: flex;
+  align-items: center;
+  height: 54px;
+}
+
+div.top_bar .container {
+  padding-left: 33.333%;
+  width: 33.333%;
+  box-sizing: content-box;
+}
+
+div.top_bar .search_container {
+  margin: 0 auto;
+  width: 360px;
+}
+
+div.top_bar .search_container input {
+  width: 320px;
+  line-height: 2;
+}
+
+div.top_bar .search_container .search_button {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border: 1px solid #f6f6f6;
+}
+
+div.top_bar .login_container .login {
+  margin-right: 10px;
+}
+
+div.top_bar .login_container a {
+  color: white;
+  margin-left: 10px;
+}
