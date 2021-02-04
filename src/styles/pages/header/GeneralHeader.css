@@ -1,15 +1,19 @@
-div.header .header_container {
+div.header .header_container_lectures,
+div.header .header_container_lecturers,
+div.header .header_container_courses,
+div.header .header_container_textbooks {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 200px;
   padding: 25px;
-  background-size: cover;
-  background-position: center;
 }
 
-div.header .header_container::before {
+div.header .header_container_lectures:before,
+div.header .header_container_lecturers:before,
+div.header .header_container_courses:before,
+div.header .header_container_textbooks::before {
   content: "";
   position: absolute;
   top: 0;

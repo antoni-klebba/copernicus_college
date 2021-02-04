@@ -6,7 +6,7 @@ import "../../styles/pages/header/GeneralHeader.css";
 
 const LecturesHeader = () => {
   return (
-    <div className="header_container">
+    <div className="header_container_lectures">
       <div className="header_text">
         <h1>Wykłady</h1>
       </div>

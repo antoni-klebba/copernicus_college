@@ -1,3 +1,5 @@
-div.header .header_container {
+div.header .header_container_courses {
   background: url("/src/images/backgrounds/courses_banner.jpg");
+  background-size: cover;
+  background-position: center;
 }
