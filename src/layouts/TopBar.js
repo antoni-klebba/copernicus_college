@@ -20,16 +20,16 @@ class TopBar extends Component {
             </div>
           </div>
           <div className="login_container">
-            <button className="login">
+            <button className="login link_reset">
               <span>
-                <i class="fas fa-unlock-alt"></i>
+                <i className="fas fa-unlock-alt"></i>
               </span>
               Logowanie
             </button>
             <span className="separate">|</span>
-            <Link to="/rejestracja">
+            <Link link_reset to="/rejestracja">
               <span>
-                <i class="far fa-edit"></i>
+                <i className="far fa-edit"></i>
               </span>
               Rejestracja
             </Link>

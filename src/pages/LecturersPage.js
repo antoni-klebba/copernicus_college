@@ -6,7 +6,7 @@ class LecturersPage extends Component {
   render() {
     return (
       <div className="lecturers_page">
-        <p>Lecturers</p>
+        <p>lectuirers</p>
       </div>
     );
   }

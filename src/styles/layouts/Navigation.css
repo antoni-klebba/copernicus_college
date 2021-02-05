@@ -45,7 +45,6 @@ div.navigation .container .nav_flex li {
 
 div.navigation .container .nav_flex li a {
   display: block;
-  text-decoration: none;
   color: inherit;
   padding: 15px;
 }
