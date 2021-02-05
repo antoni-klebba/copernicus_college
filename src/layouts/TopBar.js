@@ -8,20 +8,32 @@ class TopBar extends Component {
   render() {
     return (
       <div className="top_bar">
-        <div className="container">
-          <div className="search_container">
-            <input type="text" />
-            <button className="search_button">L</button>
+        <div className="top_bar_flex_container">
+          <div className="container">
+            <div className="search_container">
+              <input type="text" placeholder="Szukaj" />
+              <button className="search_button">
+                <span>
+                  <i className="fas fa-search"></i>
+                </span>
+              </button>
+            </div>
           </div>
-        </div>
-        <div className="login_container">
-          <button className="login">
-            <span>K</span>Logowanie
-          </button>
-          |
-          <Link to="/rejestracja">
-            <span>R</span>Rejestracja
-          </Link>
+          <div className="login_container">
+            <button className="login">
+              <span>
+                <i class="fas fa-unlock-alt"></i>
+              </span>
+              Logowanie
+            </button>
+            <span className="separate">|</span>
+            <Link to="/rejestracja">
+              <span>
+                <i class="far fa-edit"></i>
+              </span>
+              Rejestracja
+            </Link>
+          </div>
         </div>
       </div>
     );

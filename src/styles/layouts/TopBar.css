@@ -6,6 +6,14 @@ div.top_bar {
   height: 54px;
 }
 
+div.top_bar .top_bar_flex_container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1170px;
+}
+
 div.top_bar .container {
   padding-left: 33.333%;
   width: 33.333%;
@@ -13,27 +21,114 @@ div.top_bar .container {
 }
 
 div.top_bar .search_container {
+  position: relative;
   margin: 0 auto;
   width: 360px;
 }
 
 div.top_bar .search_container input {
-  width: 320px;
-  line-height: 2;
+  width: 100%;
+  margin: 0;
+  padding: 6px 35px 6px 12px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.42;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #fff;
+}
+
+div.top_bar .search_container input:focus {
+  outline: none;
+  border-left: 1px solid #62a9b2;
+  border-top: 1px solid #62a9b2;
+  border-bottom: 1px solid#62a9b2;
+  border-right: 1px solid #fff;
+}
+
+div.top_bar .search_container input:focus + button {
+  outline: none;
+  border-right: 1px solid #62a9b2;
+  border-top: 1px solid #62a9b2;
+  border-bottom: 1px solid#62a9b2;
+  border-left: 1px solid #fff;
+}
+
+div.top_bar .search_container input:active,
+div.top_bar .search_container .search_button:active {
+  outline: none;
 }
 
 div.top_bar .search_container .search_button {
-  height: 30px;
-  width: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  height: 34px;
+  width: 34px;
   background-color: #fff;
-  border: 1px solid #f6f6f6;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #fff;
+}
+
+div.top_bar .search_container .search_button:hover {
+  cursor: pointer;
+}
+
+div.top_bar .search_container .search_button:active {
+  transform: scale(1);
+  outline: none;
+}
+div.top_bar .search_container .search_button span i:active {
+  transform: scale(1);
+}
+
+div.top_bar .search_container .search_button:focus {
+  outline: none;
+}
+
+div.top_bar .top_bar_flex_container .login_container {
+  text-align: center;
+  width: 350px;
 }
 
 div.top_bar .login_container .login {
-  margin-right: 10px;
+  padding: 10px 5px 10px 5px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+div.top_bar .login_container .login:hover {
+  cursor: pointer;
+}
+
+div.top_bar .login_container .separate {
+  color: white;
+  opacity: 0.6;
+  margin: 0 8px 0 8px;
 }
 
 div.top_bar .login_container a {
+  padding: 10px 5px 10px 5px;
   color: white;
-  margin-left: 10px;
+  text-decoration: none;
+}
+
+.fas.fa-search {
+  opacity: 0.55;
+}
+
+.fas.fa-unlock-alt {
+  margin-right: 4px;
+}
+
+.far.fa-edit {
+  margin-right: 4px;
 }

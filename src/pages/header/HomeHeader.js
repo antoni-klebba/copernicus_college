@@ -16,7 +16,9 @@ const HomeHeader = () => {
         </div>
         <div className="join_us_button">
           <button>
-            <Link to="/registration">Dołącz do nas!</Link>
+            <Link to="/registration">
+              Dołącz do nas! <i class="fas fa-angle-double-right"></i>
+            </Link>
           </button>
         </div>
       </div>
