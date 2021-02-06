@@ -27,8 +27,7 @@ const secondListEn = [
 
 class Footer extends Component {
   state = {
-    langValue: "",
-    isChanged: false,
+    langValue: "pl",
   };
 
   secondMenuPl = secondListPl.map((item) => (
@@ -107,11 +106,8 @@ class Footer extends Component {
                   </select>
                   <button
                     className="btn_reset"
-                    disabled={!this.state.isChanged}
-                    onClick={() => this.props.changeLang(this.state.langValue)}
-                    style={
-                      this.state.isChanged ? { cursor: "pointer" } : { cursor: "not-allowed" }
-                    }>
+                    disabled={this.state.langValue === this.props.lang ? true : false}
+                    onClick={() => this.props.changeLang(this.state.langValue)}>
                     Zmień
                   </button>
                 </div>
