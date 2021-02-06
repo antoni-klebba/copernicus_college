@@ -15,7 +15,7 @@ const Navigation = (props) => {
           </NavLink>
         </div>
         <div className="nav_container">
-          <ul className="nav_flex">{props.menu}</ul>
+          <ul className="nav_flex">{props.lang === "pl" ? props.menuPl : props.menuEn}</ul>
         </div>
       </div>
     </div>

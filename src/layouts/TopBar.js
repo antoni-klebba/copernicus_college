@@ -24,14 +24,14 @@ class TopBar extends Component {
               <span>
                 <i className="fas fa-unlock-alt"></i>
               </span>
-              Logowanie
+              {this.props.lang === "pl" ? "Logowanie" : "Log In"}
             </button>
             <span className="separate">|</span>
             <Link link_reset to="/rejestracja">
               <span>
                 <i className="far fa-edit"></i>
               </span>
-              Rejestracja
+              {this.props.lang === "pl" ? "Rejestracja" : "Registration"}
             </Link>
           </div>
         </div>

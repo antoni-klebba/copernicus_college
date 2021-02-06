@@ -4,11 +4,11 @@ import { NavLink } from "react-router-dom";
 import "../../styles/pages/header/TextbooksHeaderBackground.css";
 import "../../styles/pages/header/GeneralHeader.css";
 
-const TextbooksHeader = () => {
+const TextbooksHeader = (props) => {
   return (
     <div className="header_container_textbooks">
       <div className="header_text">
-        <h1>Podręczniki</h1>
+        <h1>{props.lang === "pl" ? "Podręczniki" : "Textbooks"}</h1>
       </div>
       <ul className="header_nav">
         <li>
@@ -18,7 +18,7 @@ const TextbooksHeader = () => {
         </li>
         <li>
           <NavLink exact to="/podreczniki/lista">
-            Podręczniki
+            {props.lang === "pl" ? "Podręczniki" : "Textbooks"}
           </NavLink>
         </li>
       </ul>

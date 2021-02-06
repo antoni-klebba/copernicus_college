@@ -8,8 +8,8 @@ import Header from "./layouts/Header";
 import Navigation from "./layouts/Navigation";
 import Page from "./layouts/Page";
 import Footer from "./layouts/Footer";
-
-const list = [
+//Menu in pl and eng
+const ListPl = [
   { id: 0, path: "/o-nas", name: "O nas" },
   { id: 1, path: "/kursy/lista", name: "Kursy" },
   { id: 2, path: "/wyklady/lista", name: "Wykłady" },
@@ -18,11 +18,22 @@ const list = [
   { id: 5, path: "/wykladowcy/lista", name: "Wykładowcy" },
   { id: 6, path: "/kategorie", name: "Kategorie" },
 ];
+const ListEn = [
+  { id: 0, path: "/o-nas", name: "About us" },
+  { id: 1, path: "/kursy/lista", name: "Courses" },
+  { id: 2, path: "/wyklady/lista", name: "Lectures" },
+  { id: 3, path: "/abc", name: "ABC" },
+  { id: 4, path: "/podreczniki/lista", name: "Textbooks" },
+  { id: 5, path: "/wykladowcy/lista", name: "Instructors" },
+  { id: 6, path: "/kategorie", name: "Categories" },
+];
 
 class App extends Component {
-  state = {};
-
-  menu = list.map((item) => (
+  state = {
+    language: "pl",
+  };
+  //Menu in pl and eng
+  menuPl = ListPl.map((item) => (
     <li key={item.path}>
       <NavLink className="link_reset" to={item.path}>
         {item.name}
@@ -30,24 +41,49 @@ class App extends Component {
     </li>
   ));
 
+  menuEn = ListEn.map((item) => (
+    <li key={item.path}>
+      <NavLink className="link_reset" to={item.path}>
+        {item.name}
+      </NavLink>
+    </li>
+  ));
+
+  changeLanguage = (language) => {
+    if (language === "en") {
+      alert(
+        "Please note that this is a beta english version of the Copernicus College platform which is still undergoing final testing"
+      );
+    }
+
+    this.setState({
+      language,
+    });
+  };
+
   render() {
     return (
       <Router>
         <div className="app">
           <section className="top_bar">
-            <TopBar />
+            <TopBar lang={this.state.language} />
           </section>
           <nav className="navigation">
-            <Navigation menu={this.menu} />
+            <Navigation menuPl={this.menuPl} menuEn={this.menuEn} lang={this.state.language} />
           </nav>
           <header className="header">
-            <Header />
+            <Header lang={this.state.language} />
           </header>
           <section className="page">
             <Page />
           </section>
           <footer className="footer">
-            <Footer menu={this.menu} />
+            <Footer
+              lang={this.state.language}
+              menuPl={this.menuPl}
+              menuEn={this.menuEn}
+              changeLang={this.changeLanguage}
+            />
           </footer>
         </div>
       </Router>
