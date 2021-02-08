@@ -1,0 +1,9 @@
+.top_page_bar::after {
+  display: block;
+  content: "";
+  margin-top: 2px;
+  width: 100vw;
+  height: 18px;
+  background-color: transparent;
+  z-index: -1;
+}
