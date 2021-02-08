@@ -3,7 +3,10 @@ div.navigation {
   align-items: center;
   justify-content: center;
   height: 80px;
+  min-height: 50px;
+  background-color: #fff;
   border: 1px solid #f2f2f2;
+  box-shadow: 0 4px 2px -1px #f0f0f0;
 }
 
 div.navigation .container {
