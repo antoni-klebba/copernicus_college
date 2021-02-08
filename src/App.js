@@ -13,19 +13,19 @@ const ListPl = [
   { id: 0, path: "/o-nas", name: "O nas" },
   { id: 1, path: "/kursy/lista", name: "Kursy" },
   { id: 2, path: "/wyklady/lista", name: "Wykłady" },
-  { id: 3, path: "/abc", name: "ABC" },
+  { id: 3, path: "/abc/lista", name: "ABC" },
   { id: 4, path: "/podreczniki/lista", name: "Podręczniki" },
   { id: 5, path: "/wykladowcy/lista", name: "Wykładowcy" },
-  { id: 6, path: "/kategorie", name: "Kategorie" },
+  { id: 6, path: "/kategorie/lista", name: "Kategorie" },
 ];
 const ListEn = [
   { id: 0, path: "/o-nas", name: "About us" },
   { id: 1, path: "/kursy/lista", name: "Courses" },
   { id: 2, path: "/wyklady/lista", name: "Lectures" },
-  { id: 3, path: "/abc", name: "ABC" },
+  { id: 3, path: "/abc/lista", name: "ABC" },
   { id: 4, path: "/podreczniki/lista", name: "Textbooks" },
   { id: 5, path: "/wykladowcy/lista", name: "Instructors" },
-  { id: 6, path: "/kategorie", name: "Categories" },
+  { id: 6, path: "/kategorie/lista", name: "Categories" },
 ];
 
 class App extends Component {
