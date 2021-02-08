@@ -136,9 +136,9 @@ class Footer extends Component {
               <ul>{this.props.lang === "pl" ? this.props.menuPl : this.props.menuEn}</ul>
             </div>
             <div className="footer_bottom_right">
-              <p>
+              <div>
                 © 2014-2021, <h6>Copernicus Center for Interdisciplinary Studies</h6>
-              </p>
+              </div>
             </div>
           </div>
         </section>
