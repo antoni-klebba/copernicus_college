@@ -1,0 +1,63 @@
+div.header .header_container_abc,
+div.header .header_container_categories {
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+div.header .header_container_abc .container,
+div.header .header_container_categories .container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1170px;
+  height: 132px;
+}
+
+div.header .header_text {
+  color: #464749;
+  line-height: 1.1;
+  font-size: 42px;
+  margin-top: 20px;
+  z-index: 2;
+}
+
+div.header .header_text h1 {
+  font-weight: 400;
+}
+
+div.header .header_nav {
+  display: flex;
+  margin-top: 20px;
+  padding: 0;
+  z-index: 2;
+  list-style: none;
+}
+
+div.header .header_nav a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #7d7e7f;
+  margin-right: 9px;
+}
+
+div.header .header_nav a:hover {
+  color: #47828a;
+}
+
+div.header .header_nav a.active {
+  pointer-events: none;
+  cursor: text;
+}
+
+div.header .header_nav a:focus {
+  outline: none;
+}
+
+div .header .header_nav li:not(:first-child) a::before {
+  color: white;
+  content: "/";
+  margin-right: 9px;
+  font-size: 13px;
+}

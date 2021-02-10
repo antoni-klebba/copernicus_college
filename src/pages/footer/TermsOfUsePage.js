@@ -32,6 +32,7 @@ const TermsOfUsePage = () => {
                 numerem KRS 0000311106, e-mail: info@copernicuscenter.edu.pl.
               </p>
               <p className="justify margin_bottom_2x">
+                {" "}
                 2. Z Usługodawcą można szybko i efektywnie kontaktować przy wykorzystaniu poczty
                 elektronicznej info@copernicuscenter.edu.pl lub na kontakt@copernicuscollege.pl.
               </p>
