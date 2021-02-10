@@ -30,10 +30,6 @@
   text-align: center;
 }
 
-.only_text strong {
-  font-weight: bold;
-}
-
 .only_text .justify {
   text-align: justify;
 }
