@@ -1,0 +1,19 @@
+.categories_list {
+  width: 100vw;
+  margin: 5px 0;
+  font-family: "Roboto Slab", "serif";
+  background-color: #f8f9fa;
+}
+
+.categories_list .container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.categories_list .container .page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 12px;
+}

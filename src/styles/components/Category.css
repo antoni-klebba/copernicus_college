@@ -1,0 +1,25 @@
+.categories_list .category {
+  display: flex;
+  align-items: center;
+  width: 260px;
+  height: 50px;
+  padding: 4px;
+  border: 1px solid #e5e5e5;
+  color: #5ba5af;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.categories_list .category:hover {
+  background-color: #5ba5af67;
+  color: white;
+}
+
+.category a {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  font-size: 1.4em;
+  line-height: 1.1;
+  color: inherit;
+}
