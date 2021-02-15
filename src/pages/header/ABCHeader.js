@@ -7,7 +7,7 @@ const ABCHeader = (props) => {
   return (
     <div className="header_container_abc">
       <div className="container">
-        <div className="header_text">
+        <div className="second_header_text">
           <h1>ABC</h1>
         </div>
         <ul className="header_nav">
