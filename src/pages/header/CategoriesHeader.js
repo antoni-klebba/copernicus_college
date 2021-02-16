@@ -7,7 +7,7 @@ const ABCHeader = (props) => {
   return (
     <div className="header_container_categories">
       <div className="container">
-        <div className="header_text">
+        <div className="second_header_text">
           <h1>{props.lang === "pl" ? "Kategorie" : "Categories"}</h1>
         </div>
         <ul className="header_nav">

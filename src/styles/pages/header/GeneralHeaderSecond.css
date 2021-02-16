@@ -15,7 +15,7 @@ div.header .header_container_categories .container {
   height: 132px;
 }
 
-div.header .header_text {
+div.header .second_header_text {
   color: #464749;
   line-height: 1.1;
   font-size: 42px;
@@ -23,7 +23,7 @@ div.header .header_text {
   z-index: 2;
 }
 
-div.header .header_text h1 {
+div.header .second_header_text h1 {
   font-weight: 400;
 }
 
