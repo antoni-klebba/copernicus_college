@@ -36,7 +36,7 @@ const Page = () => {
       <Route path="/wyklady/lista" component={LecturesPage} />
       <Route path="/abc/lista" component={ABCPage} />
       <Route path="/podreczniki/lista" component={TextbooksPage} />
-      <Route path="/wyklady/lista" component={LecturersPage} />
+      <Route path="/wykladowcy/lista" component={LecturersPage} />
       <Route path="/kategorie/lista" component={CategoriesPage} />
     </Switch>
   );
