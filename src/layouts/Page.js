@@ -32,12 +32,12 @@ const Page = () => {
       <Route path="/kontakt" component={ContactPage} />
       {/* Complex pages */}
       <Route path="/" exact component={HomePage} />
-      <Route path="/kursy/lista" component={CoursesPage} />
-      <Route path="/wyklady/lista" component={LecturesPage} />
-      <Route path="/abc/lista" component={ABCPage} />
-      <Route path="/podreczniki/lista" component={TextbooksPage} />
-      <Route path="/wykladowcy/lista" component={LecturersPage} />
-      <Route path="/kategorie/lista" component={CategoriesPage} />
+      <Route path="/kursy/lista" exact component={CoursesPage} />
+      <Route path="/wyklady/lista" exact component={LecturesPage} />
+      <Route path="/abc/lista" exact component={ABCPage} />
+      <Route path="/podreczniki/lista" exact component={TextbooksPage} />
+      <Route path="/wykladowcy/lista" exact component={LecturersPage} />
+      <Route path="/kategorie/lista" exact component={CategoriesPage} />
     </Switch>
   );
 };

@@ -2,16 +2,16 @@ import React, { Component } from "react";
 import Instructor from "../../components/Instructor";
 import "../../styles/pages/LecturersPage.css";
 
-import bartoszBrozek from "../../images/thumbnails/lectures/bartosz-brozek.png";
-import gregoryChaitin from "../../images/thumbnails/lectures/gregory-chaitin.png";
-import grzegorzBlicharz from "../../images/thumbnails/lectures/grzegorz-blicharz.png";
-import joanaBarcik from "../../images/thumbnails/lectures/joana-barcik.png";
-import johnBarrow from "../../images/thumbnails/lectures/john-barrow.png";
-import julianBarbour from "../../images/thumbnails/lectures/julian-barbour.png";
-import marcoBersanelli from "../../images/thumbnails/lectures/marco-bersanelli.png";
-import marekBinder from "../../images/thumbnails/lectures/marek-binder.png";
-import michaelArbib from "../../images/thumbnails/lectures/michael-arbib.png";
-import nedBlock from "../../images/thumbnails/lectures/ned-block.png";
+import bartoszBrozek from "../../images/thumbnails/lecturers/bartosz-brozek.png";
+import gregoryChaitin from "../../images/thumbnails/lecturers/gregory-chaitin.png";
+import grzegorzBlicharz from "../../images/thumbnails/lecturers/grzegorz-blicharz.png";
+import joanaBarcik from "../../images/thumbnails/lecturers/joana-barcik.png";
+import johnBarrow from "../../images/thumbnails/lecturers/john-barrow.png";
+import julianBarbour from "../../images/thumbnails/lecturers/julian-barbour.png";
+import marcoBersanelli from "../../images/thumbnails/lecturers/marco-bersanelli.png";
+import marekBinder from "../../images/thumbnails/lecturers/marek-binder.png";
+import michaelArbib from "../../images/thumbnails/lecturers/michael-arbib.png";
+import nedBlock from "../../images/thumbnails/lecturers/ned-block.png";
 
 class LecturersPage extends Component {
   state = {
