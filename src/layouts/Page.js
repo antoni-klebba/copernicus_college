@@ -17,10 +17,10 @@ import CoursesPage from "../pages/navigation/CoursesPage";
 import LecturesPage from "../pages/navigation/LecturesPage";
 import ABCPage from "../pages/navigation/ABCPage";
 import TextbooksPage from "../pages/navigation/TextbooksPage";
-import LecturersPage from "../pages/navigation/LecturersPage";
+import InstructorsPage from "../pages/navigation/InstructorsPage";
 import CategoriesPage from "../pages/navigation/CategoriesPage";
 
-const Page = () => {
+const Page = (props) => {
   return (
     <Switch>
       {/* Only text pages */}
@@ -31,13 +31,43 @@ const Page = () => {
       <Route path="/faq" component={FAQPage} />
       <Route path="/kontakt" component={ContactPage} />
       {/* Complex pages */}
-      <Route path="/" exact component={HomePage} />
-      <Route path="/kursy/lista" exact component={CoursesPage} />
-      <Route path="/wyklady/lista" exact component={LecturesPage} />
-      <Route path="/abc/lista" exact component={ABCPage} />
-      <Route path="/podreczniki/lista" exact component={TextbooksPage} />
-      <Route path="/wykladowcy/lista" exact component={LecturersPage} />
-      <Route path="/kategorie/lista" exact component={CategoriesPage} />
+      <Route
+        path="/"
+        exact
+        render={() => (
+          <HomePage
+            coursesList={props.coursesList}
+            lecturesList={props.lecturesList}
+            textbooksList={props.textbooksList}
+          />
+        )}
+      />
+      <Route
+        path="/kursy/lista"
+        exact
+        render={() => <CoursesPage coursesList={props.coursesList} />}
+      />
+      <Route
+        path="/wyklady/lista"
+        exact
+        render={() => <LecturesPage lecturesList={props.lecturesList} />}
+      />
+      <Route path="/abc/lista" exact render={() => <ABCPage {...props} />} />
+      <Route
+        path="/podreczniki/lista"
+        exact
+        render={() => <TextbooksPage textbooksList={props.textbooksList} />}
+      />
+      <Route
+        path="/wykladowcy/lista"
+        exact
+        render={() => <InstructorsPage instructorsList={props.instructorsList} />}
+      />
+      <Route
+        path="/kategorie/lista"
+        exact
+        render={() => <CategoriesPage categoriesList={props.categoriesList} />}
+      />
     </Switch>
   );
 };
