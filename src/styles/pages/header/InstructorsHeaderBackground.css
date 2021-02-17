@@ -1,0 +1,5 @@
+div.header .header_container_Instructors {
+  background: url("/src/images/backgrounds/instructors_banner.jpg");
+  background-size: cover;
+  background-position: center;
+}

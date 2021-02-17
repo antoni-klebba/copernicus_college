@@ -1,5 +1,5 @@
 div.header .header_container_lectures,
-div.header .header_container_lecturers,
+div.header .header_container_Instructors,
 div.header .header_container_courses,
 div.header .header_container_textbooks {
   position: relative;
@@ -11,7 +11,7 @@ div.header .header_container_textbooks {
 }
 
 div.header .header_container_lectures:before,
-div.header .header_container_lecturers:before,
+div.header .header_container_Instructors:before,
 div.header .header_container_courses:before,
 div.header .header_container_textbooks::before {
   content: "";

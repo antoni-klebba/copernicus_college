@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import "../../styles/pages/header/LecturersHeaderBackground.css";
+import "../../styles/pages/header/InstructorsHeaderBackground.css";
 import "../../styles/pages/header/GeneralHeader.css";
 
-const LecturersHeader = (props) => {
+const InstructorsHeader = (props) => {
   return (
-    <div className="header_container_lecturers">
+    <div className="header_container_Instructors">
       <div className="header_text">
         <h1>{props.lang === "pl" ? "Wykładowcy" : "Instructors"}</h1>
       </div>
@@ -26,4 +26,4 @@ const LecturersHeader = (props) => {
   );
 };
 
-export default LecturersHeader;
+export default InstructorsHeader;

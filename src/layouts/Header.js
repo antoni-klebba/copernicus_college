@@ -8,7 +8,7 @@ import CoursesHeader from "../pages/header/CoursesHeader";
 import LecturesHeader from "../pages/header/LecturesHeader";
 import ABCHeader from "../pages/header/ABCHeader";
 import TextbooksHeader from "../pages/header/TextbooksHeader";
-import LecturersHeader from "../pages/header/LecturersHeader";
+import InstructorsHeader from "../pages/header/InstructorsHeader";
 import CategoriesHeader from "../pages/header/CategoriesHeader";
 
 const Header = (props) => {
@@ -21,7 +21,7 @@ const Header = (props) => {
         <Route path="/wyklady/lista" exact render={() => <LecturesHeader lang={lang} />} />
         <Route path="/abc/lista" exact render={() => <ABCHeader lang={lang} />} />
         <Route path="/podreczniki/lista" exact render={() => <TextbooksHeader lang={lang} />} />
-        <Route path="/wykladowcy/lista" exact render={() => <LecturersHeader lang={lang} />} />
+        <Route path="/wykladowcy/lista" exact render={() => <InstructorsHeader lang={lang} />} />
         <Route path="/kategorie/lista" exact render={() => <CategoriesHeader lang={lang} />} />
       </Switch>
     </div>
