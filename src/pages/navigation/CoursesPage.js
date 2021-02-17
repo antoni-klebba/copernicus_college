@@ -1,11 +1,16 @@
 import React from "react";
+import MainCart from "../../components/MainCart";
+import "../../styles/pages/MainPage.css";
 
-const CoursesPage = () => {
+const Courses = (props) => {
+  const courses = props.coursesList.map((item) => <MainCart key={item.title} {...item} />);
   return (
-    <div>
-      <p>Kursy</p>
+    <div className="main_page">
+      <div className="container">
+        <div className="page">{courses}</div>
+      </div>
     </div>
   );
 };
 
-export default CoursesPage;
+export default Courses;
