@@ -1,8 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import "../styles/layouts/Header.css";
-
 import HomeHeader from "../pages/header/HomeHeader";
 import CoursesHeader from "../pages/header/CoursesHeader";
 import LecturesHeader from "../pages/header/LecturesHeader";

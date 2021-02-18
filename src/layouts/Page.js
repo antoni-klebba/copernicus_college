@@ -1,8 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import "../styles/layouts/Page.css";
-
 // only text pages
 import AboutPage from "../pages/navigation/AboutPage";
 import FunCopCenter from "../pages/footer/FunCopCenterPage";

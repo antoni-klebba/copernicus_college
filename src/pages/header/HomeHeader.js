@@ -18,7 +18,7 @@ const HomeHeader = (props) => {
         <div className="join_us_button">
           <button>
             <Link to="/registration">
-              {props.lang === "pl" ? "Dołącz do nas!" : "Join us! "}
+              {props.lang === "pl" ? "Dołącz do nas! " : "Join us! "}
               <i className="fas fa-angle-double-right"></i>
             </Link>
           </button>
