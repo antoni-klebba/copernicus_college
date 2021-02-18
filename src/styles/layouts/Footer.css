@@ -61,6 +61,7 @@ footer.footer {
 }
 
 .footer .top_section .footer_nav ul li a {
+  color: white;
   padding: 10px 15px;
 }
 
@@ -91,6 +92,7 @@ footer.footer {
   font-size: 24px;
   line-height: 1.5;
   background-color: #3b4757;
+  color: #fff;
   border: 1px solid transparent;
   cursor: pointer;
 }
