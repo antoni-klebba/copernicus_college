@@ -10,6 +10,7 @@ import TermsOfUsePage from "../pages/footer/TermsOfUsePage";
 import CodeOfHonorPage from "../pages/footer/CodeOfHonorPage";
 import FAQPage from "../pages/footer/FAQPage";
 import ContactPage from "../pages/footer/ContactPage";
+import ErrorPage from "../pages/ErrorPage";
 
 // complex pages
 import HomePage from "../pages/navigation/HomePage";
@@ -68,6 +69,7 @@ const Page = (props) => {
         exact
         render={() => <CategoriesPage categoriesList={props.categoriesList} />}
       />
+      <Route path="" render={() => <ErrorPage />} />
     </Switch>
   );
 };
