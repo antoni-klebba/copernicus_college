@@ -52,7 +52,7 @@ const Page = (props) => {
         exact
         render={() => <LecturesPage lecturesList={props.lecturesList} />}
       />
-      <Route path="/abc/lista" exact render={() => <ABCPage {...props} />} />
+      <Route path="/abc/lista" exact render={() => <ABCPage videosList={props.videosList} />} />
       <Route
         path="/podreczniki/lista"
         exact
