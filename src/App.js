@@ -488,7 +488,7 @@ class App extends Component {
       { id: 6, path: "/kategorie/lista", name: "Categories" },
     ],
   };
-  //Menu in pl and eng
+  //language change handle
   menuPl = this.state.ListPl.map((item) => (
     <li key={item.path}>
       <NavLink className="link_reset" to={item.path}>
@@ -536,8 +536,8 @@ class App extends Component {
           <footer className="footer">
             <Footer
               lang={this.state.language}
-              menuPl={this.state.menuPl}
-              menuEn={this.state.menuEn}
+              menuPl={this.menuPl}
+              menuEn={this.menuEn}
               changeLang={this.changeLanguage}
             />
           </footer>
