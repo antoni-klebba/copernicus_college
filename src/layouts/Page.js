@@ -44,7 +44,9 @@ const Page = (props) => {
       <Route
         path="/kursy/lista"
         exact
-        render={() => <CoursesPage coursesList={props.coursesList} />}
+        render={() => (
+          <CoursesPage coursesList={props.coursesList} recommendedList={props.recommendedList} />
+        )}
       />
       <Route
         path="/wyklady/lista"

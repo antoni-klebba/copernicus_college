@@ -1,0 +1,19 @@
+.home_page {
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.home_page .container {
+  width: 1170px;
+  margin: 40px auto;
+  padding: 0 15px;
+}
+
+.home_page .page {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 50px;
+}
