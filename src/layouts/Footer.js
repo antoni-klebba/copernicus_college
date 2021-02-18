@@ -7,30 +7,28 @@ import collegeLogo from "../images/footer/copernicus_college_logo2.png";
 import centerLogo from "../images/footer/copernicus_center_logo.png";
 import univerLogo from "../images/footer/uniwersytet_logo.png";
 
-const secondListPl = [
-  { path: "o-nas", name: "O nas" },
-  { path: "fundacja-centrum-kopernika", name: "Fundacja Centrum Kopernika" },
-  { path: "regulamin", name: "Regulamin" },
-  { path: "kodeks-honorowy", name: "Kodeks honorowy" },
-  { path: "faq", name: "FAQ" },
-  { path: "kontakt", name: "Kontakt" },
-];
-
-const secondListEn = [
-  { path: "o-nas", name: "About Us" },
-  { path: "fundacja-centrum-kopernika", name: "Copernicus Center Foundation" },
-  { path: "regulamin", name: "Terms of service" },
-  { path: "kodeks-honorowy", name: "Honor code" },
-  { path: "faq", name: "FAQ" },
-  { path: "kontakt", name: "Contact" },
-];
-
 class Footer extends Component {
   state = {
     langValue: "pl",
+    secondListEn: [
+      { path: "o-nas", name: "About Us" },
+      { path: "fundacja-centrum-kopernika", name: "Copernicus Center Foundation" },
+      { path: "regulamin", name: "Terms of service" },
+      { path: "kodeks-honorowy", name: "Honor code" },
+      { path: "faq", name: "FAQ" },
+      { path: "kontakt", name: "Contact" },
+    ],
+    secondListPl: [
+      { path: "o-nas", name: "O nas" },
+      { path: "fundacja-centrum-kopernika", name: "Fundacja Centrum Kopernika" },
+      { path: "regulamin", name: "Regulamin" },
+      { path: "kodeks-honorowy", name: "Kodeks honorowy" },
+      { path: "faq", name: "FAQ" },
+      { path: "kontakt", name: "Kontakt" },
+    ],
   };
 
-  secondMenuPl = secondListPl.map((item) => (
+  secondMenuPl = this.state.secondListPl.map((item) => (
     <li key={item.path}>
       <NavLink className="link_reset" to={item.path}>
         {item.name}
@@ -38,7 +36,7 @@ class Footer extends Component {
     </li>
   ));
 
-  secondMenuEn = secondListEn.map((item) => (
+  secondMenuEn = this.state.secondListEn.map((item) => (
     <li key={item.path}>
       <NavLink className="link_reset" to={item.path}>
         {item.name}
