@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 
 import "../styles/components/MainCart.css";
 
+//
+
 const Instructors = ({ title, about, path, thumbnail, status, type }) => {
   const seeDetails = () => {
     if (type === "textbook") return "podręcznika";

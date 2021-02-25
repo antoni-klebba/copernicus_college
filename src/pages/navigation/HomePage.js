@@ -1,34 +1,30 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import MainCart from "../../components/MainCart";
-import Recommended from "../../components/Recommended";
 
 import "../../styles/pages/HomePage.css";
 class HomePage extends Component {
-  state = {
-    coursesListCopy: this.props.coursesList,
-    recommendedList: [],
-  };
+  state = {};
 
-  generateRecommendedList = () => {
-    let recommendedList = this.state.recommendedList;
-    const randomNum = Math.floor(Math.random() * this.state.coursesListCopy.length);
-    const recommendedElement = this.state.coursesListCopy.splice(randomNum, 1);
-    recommendedList.push(recommendedElement);
-    this.setState((prevState) => {
-      return {
-        coursesListCopy: prevState.coursesListCopy,
-        recommendedList: prevState.recommendedList + recommendedList,
-      };
+  recommendedRender = () =>
+    this.props.homeRecommended.map((item) => {
+      return <MainCart key={item.title} {...item} />;
     });
-  };
 
-  componentDidMount = () => {
-    for (let i = 0; i < 4; i++) {
-      this.generateRecommendedList();
-    }
-    // console.log(this.state.recommendedList);
-  };
+  coursesRender = () =>
+    this.props.homeCourses.map((item) => {
+      return <MainCart key={item.title} {...item} />;
+    });
+
+  lecturesRender = () =>
+    this.props.homeLectures.map((item) => {
+      return <MainCart key={item.title} {...item} />;
+    });
+
+  textbooksRender = () =>
+    this.props.homeTextbooks.map((item) => {
+      return <MainCart key={item.title} {...item} />;
+    });
 
   render() {
     return (
@@ -39,9 +35,7 @@ class HomePage extends Component {
               <div className="top_part">
                 <h2>Polecane teraz</h2>
               </div>
-              <div className="main_part">
-                <Recommended recommendedList={this.state.recommendedList} />
-              </div>
+              <div className="main_part">{this.recommendedRender()}</div>
             </section>
             <section className="row">
               <div className="top_part">
@@ -50,7 +44,7 @@ class HomePage extends Component {
                   Zobacz wszystkie
                 </NavLink>
               </div>
-              <div className="main_part"></div>
+              <div className="main_part">{this.coursesRender()}</div>
             </section>
             <section className="row">
               <div className="top_part">
@@ -59,7 +53,7 @@ class HomePage extends Component {
                   Zobacz wszystkie
                 </NavLink>
               </div>
-              <div className="main_part"></div>
+              <div className="main_part">{this.lecturesRender()}</div>
             </section>
             <section className="row">
               <div className="top_part">
@@ -68,7 +62,7 @@ class HomePage extends Component {
                   Zobacz wszystkie
                 </NavLink>
               </div>
-              <div className="main_part"></div>
+              <div className="main_part">{this.textbooksRender()}</div>
             </section>
           </div>
         </div>

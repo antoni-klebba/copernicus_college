@@ -1,7 +1,7 @@
 .only_text {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   background-color: #f8f9fa;
   font-size: 14px;
   line-height: 24px;

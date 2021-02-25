@@ -35,18 +35,17 @@ const Page = (props) => {
         exact
         render={() => (
           <HomePage
-            coursesList={props.coursesList}
-            lecturesList={props.lecturesList}
-            textbooksList={props.textbooksList}
+            homeCourses={props.homeCourses}
+            homeRecommended={props.homeRecomended}
+            homeLectures={props.homeLectures}
+            homeTextbooks={props.homeTextbooks}
           />
         )}
       />
       <Route
         path="/kursy/lista"
         exact
-        render={() => (
-          <CoursesPage coursesList={props.coursesList} recommendedList={props.recommendedList} />
-        )}
+        render={() => <CoursesPage coursesList={props.coursesList} />}
       />
       <Route
         path="/wyklady/lista"

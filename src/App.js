@@ -45,6 +45,7 @@ class App extends Component {
   state = {
     coursesList: [
       {
+        id: 0,
         title: "Metodologia nauk społecznych i humanistycznych",
         about:
           "Czym różnią się metody wykorzystywane przez przedstawicieli różnych nauk humanistycznych i społecznych?",
@@ -54,14 +55,16 @@ class App extends Component {
         type: "course",
       },
       {
+        id: 1,
         title: "Interdyscyplinarność w naukach humanistycznych i społecznych",
         about: "Czym jest interdyscyplinarność i jak przejawia się w różnych dyscyplinach?",
         path: "/podreczniki/lista/interdyscyplinarnosc-w-naukach-humanistycznych-i-spolecznych",
         thumbnail: interdyscyplinarnoscWNaukachHumanistycznychISpolecznych,
-        status: "Zakończenie bieżącej edycji: 9 czerwca 2021",
+        status: "Zakończenie bieżącej edycji:   9 czerwca 2021",
         type: "course",
       },
       {
+        id: 2,
         title: "kognitywistyka w praktyce",
         about:
           "Podręcznik Kognitywistyka w praktyce jest poświęcony rozmaitym zastosowaniom najnowszych osiągnięć nauk kognitywnych.",
@@ -71,6 +74,7 @@ class App extends Component {
         type: "course",
       },
       {
+        id: 3,
         title: "Wprowadzenie do filozofii umysłu i kognitywistyki",
         about:
           "Podręcznik stanowi przystępne wprowadzenie do wybranych zagadnień z zakresu filozofii umysłu.",
@@ -80,6 +84,7 @@ class App extends Component {
         type: "course",
       },
       {
+        id: 4,
         title: "Biologia ewolucyjna: intuicyjne wprowadzenie",
         about:
           "Zawsze chiałeś wiedzieć na czym tak naprawdę polega ewolucja biologiczna, ale nie wiedziałeś gdzie szukać?",
@@ -89,6 +94,7 @@ class App extends Component {
         type: "course",
       },
       {
+        id: 5,
         title: "Wstep do biblistyki",
         about:
           "Podręcznik stanowi przystępne wprowadzenie do lektury Biblii. Zawarte w nim uwagi okażą się przydatne zarówno dla osób zainteresowanych teologią chrześcijańską, jak i Biblią jako częścią kultury.",
@@ -98,6 +104,7 @@ class App extends Component {
         type: "course",
       },
       {
+        id: 6,
         title: "Nauka a religia - cz. 1",
         about:
           "Podręcznik dr hab. Teresy Obolevitch stanowi wprowadzenie do analizy relacji występujących pomiędzy nauką i religią.",
@@ -107,6 +114,7 @@ class App extends Component {
         type: "course",
       },
       {
+        id: 7,
         title: "Wprowadzenie do filozofii nauki",
         about:
           "Przystępne wprowadzenie do filozofii nauki skierowane do wszystkich osób – zarówno „humanistów”, przedstawicieli dyscyplin empirycznych, jak i inżynierów.",
@@ -486,6 +494,165 @@ class App extends Component {
       { id: 4, path: "/podreczniki/lista", name: "Textbooks" },
       { id: 5, path: "/wykladowcy/lista", name: "Instructors" },
       { id: 6, path: "/kategorie/lista", name: "Categories" },
+    ],
+    homeRecomended: [
+      {
+        id: 0,
+        title: "Metodologia nauk społecznych i humanistycznych",
+        about:
+          "Czym różnią się metody wykorzystywane przez przedstawicieli różnych nauk humanistycznych i społecznych?",
+        path: "/podreczniki/lista/metodologia-nauk-spolecznych-i-humanistycznych",
+        thumbnail: metodologiaNaukSpolecznychIHumanistycznych,
+        status: "Zakończenie bieżącej edycji: 16 maja 2021",
+        type: "course",
+      },
+      {
+        id: 1,
+        title: "Interdyscyplinarność w naukach humanistycznych i społecznych",
+        about: "Czym jest interdyscyplinarność i jak przejawia się w różnych dyscyplinach?",
+        path: "/podreczniki/lista/interdyscyplinarnosc-w-naukach-humanistycznych-i-spolecznych",
+        thumbnail: interdyscyplinarnoscWNaukachHumanistycznychISpolecznych,
+        status: "Zakończenie bieżącej edycji: 9 czerwca 2021",
+        type: "course",
+      },
+      {
+        id: 2,
+        title: "kognitywistyka w praktyce",
+        about:
+          "Podręcznik Kognitywistyka w praktyce jest poświęcony rozmaitym zastosowaniom najnowszych osiągnięć nauk kognitywnych.",
+        path: "/podreczniki/lista/kognitywistyka-w-praktyce",
+        thumbnail: kognitywistykaWPraktyce,
+        status: "Zakończenie bieżącej edycji: 24 sierpnia 2021",
+        type: "course",
+      },
+      {
+        id: 3,
+        title: "Wprowadzenie do filozofii umysłu i kognitywistyki",
+        about:
+          "Podręcznik stanowi przystępne wprowadzenie do wybranych zagadnień z zakresu filozofii umysłu.",
+        path: "/podreczniki/lista/wprowadzenie-do-filozofii-umyslu-i-kognitywistyki",
+        thumbnail: wprowadzenieDoFilozofiiUmysluIKognitywistyki,
+        status: "Zakończenie bieżącej edycji: 26 kwietnia 2021",
+        type: "course",
+      },
+    ],
+    homeCourses: [
+      {
+        id: 4,
+        title: "Biologia ewolucyjna: intuicyjne wprowadzenie",
+        about:
+          "Zawsze chiałeś wiedzieć na czym tak naprawdę polega ewolucja biologiczna, ale nie wiedziałeś gdzie szukać?",
+        path: "/podreczniki/lista/biologia-ewolucyjna-intuicyjne-wprowadzenie",
+        thumbnail: biologiaEwolucyjnaIntuicyjneWprowadzenie,
+        status: "Start: 24 lutego 2021",
+        type: "course",
+      },
+      {
+        id: 5,
+        title: "Wstep do biblistyki",
+        about:
+          "Podręcznik stanowi przystępne wprowadzenie do lektury Biblii. Zawarte w nim uwagi okażą się przydatne zarówno dla osób zainteresowanych teologią chrześcijańską, jak i Biblią jako częścią kultury.",
+        path: "/podreczniki/lista/wstep-do-biblistyki",
+        thumbnail: wstepDoBiblistyki,
+        status: "Start: 31 kwietnia 2021",
+        type: "course",
+      },
+      {
+        id: 6,
+        title: "Nauka a religia - cz. 1",
+        about:
+          "Podręcznik dr hab. Teresy Obolevitch stanowi wprowadzenie do analizy relacji występujących pomiędzy nauką i religią.",
+        path: "/podreczniki/lista/nauka-a-religia-cz-1",
+        thumbnail: naukaAReligiaCz1,
+        status: "Zakończenie bieżącej edycji: 26 kwietnia 2021",
+        type: "course",
+      },
+      {
+        id: 7,
+        title: "Wprowadzenie do filozofii nauki",
+        about:
+          "Przystępne wprowadzenie do filozofii nauki skierowane do wszystkich osób – zarówno „humanistów”, przedstawicieli dyscyplin empirycznych, jak i inżynierów.",
+        path: "/podreczniki/lista/wprowadzenie-do-filozofii-nauki",
+        thumbnail: wprowadzenieDoFilozofiiNauki,
+        status: "Zakończenie bieżącej edycji: 26 kwietnia 2021",
+        type: "course",
+      },
+    ],
+    homeLectures: [
+      {
+        title: "kognitywistyka w praktyce",
+        about:
+          "Podręcznik Kognitywistyka w praktyce jest poświęcony rozmaitym zastosowaniom najnowszych osiągnięć nauk kognitywnych.",
+        path: "/podreczniki/lista/kognitywistyka-w-praktyce",
+        thumbnail: kognitywistykaWPraktyce,
+        status: "Nieograniczony dostęp",
+        type: "lecture",
+      },
+      {
+        title: "Wprowadzenie do filozofii umysłu i kognitywistyki",
+        about:
+          "Podręcznik stanowi przystępne wprowadzenie do wybranych zagadnień z zakresu filozofii umysłu.",
+        path: "/podreczniki/lista/wprowadzenie-do-filozofii-umyslu-i-kognitywistyki",
+        thumbnail: wprowadzenieDoFilozofiiUmysluIKognitywistyki,
+        status: "Nieograniczony dostęp",
+        type: "lecture",
+      },
+      {
+        title: "Biologia ewolucyjna: intuicyjne wprowadzenie",
+        about:
+          "Zawsze chiałeś wiedzieć na czym tak naprawdę polega ewolucja biologiczna, ale nie wiedziałeś gdzie szukać?",
+        path: "/podreczniki/lista/biologia-ewolucyjna-intuicyjne-wprowadzenie",
+        thumbnail: biologiaEwolucyjnaIntuicyjneWprowadzenie,
+        status: "Nieograniczony dostęp",
+        type: "lecture",
+      },
+      {
+        title: "Wstep do biblistyki",
+        about:
+          "Podręcznik stanowi przystępne wprowadzenie do lektury Biblii. Zawarte w nim uwagi okażą się przydatne zarówno dla osób zainteresowanych teologią chrześcijańską, jak i Biblią jako częścią kultury.",
+        path: "/podreczniki/lista/wstep-do-biblistyki",
+        thumbnail: wstepDoBiblistyki,
+        status: "Nieograniczony dostęp",
+        type: "lecture",
+      },
+    ],
+    homeTextbooks: [
+      {
+        title: "Metodologia nauk społecznych i humanistycznych",
+        about:
+          "Czym różnią się metody wykorzystywane przez przedstawicieli różnych nauk humanistycznych i społecznych? Co analiza metodologii określonej dyscypliny może nam powiedzieć o tej dyscyplinie?",
+        path: "/podreczniki/lista/metodologia-nauk-spolecznych-i-humanistycznych",
+        thumbnail: metodologiaNaukSpolecznychIHumanistycznych,
+        status: "Nieograniczony dostęp",
+        type: "textbook",
+      },
+      {
+        title: "Interdyscyplinarność w naukach humanistycznych i społecznych",
+        about:
+          "Czym jest interdyscyplinarność i jak przejawia się w różnych dyscyplinach? Na czym polega specyfika interdyscyplinarności nauk humanistycznych i społecznych?",
+        path: "/podreczniki/lista/interdyscyplinarnosc-w-naukach-humanistycznych-i-spolecznych",
+        thumbnail: interdyscyplinarnoscWNaukachHumanistycznychISpolecznych,
+        status: "Nieograniczony dostęp",
+        type: "textbook",
+      },
+      {
+        title: "kognitywistyka w praktyce",
+        about:
+          "Podręcznik Kognitywistyka w praktyce jest poświęcony rozmaitym zastosowaniom najnowszych osiągnięć nauk kognitywnych.",
+        path: "/podreczniki/lista/kognitywistyka-w-praktyce",
+        thumbnail: kognitywistykaWPraktyce,
+        status: "Nieograniczony dostęp",
+        type: "textbook",
+      },
+      {
+        title: "Wprowadzenie do filozofii umysłu i kognitywistyki",
+        about:
+          "Podręcznik stanowi przystępne wprowadzenie do wybranych zagadnień z zakresu filozofii umysłu.",
+        path: "/podreczniki/lista/wprowadzenie-do-filozofii-umyslu-i-kognitywistyki",
+        thumbnail: wprowadzenieDoFilozofiiUmysluIKognitywistyki,
+        status: "Nieograniczony dostęp",
+        type: "textbook",
+      },
     ],
   };
   //language change handle
