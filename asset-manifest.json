@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/copernicus_college/static/css/main.6deee241.css",
-    "main.js": "/copernicus_college/static/js/main.fe2f1080.js",
+    "main.js": "/copernicus_college/static/js/main.7eec7868.js",
     "static/media/textbooks_banner.jpg": "/copernicus_college/static/media/textbooks_banner.d73f2efc97abf490ba74.jpg",
     "static/media/courses_banner.jpg": "/copernicus_college/static/media/courses_banner.fcbcf1aede8af932fe8a.jpg",
     "static/media/lectures_banner.jpg": "/copernicus_college/static/media/lectures_banner.b1f8c2ff9038eec2057d.jpg",
@@ -34,10 +34,10 @@
     "static/media/joana-barcik.png": "/copernicus_college/static/media/joana-barcik.e557ebafd7851640dbd3.png",
     "index.html": "/copernicus_college/index.html",
     "main.6deee241.css.map": "/copernicus_college/static/css/main.6deee241.css.map",
-    "main.fe2f1080.js.map": "/copernicus_college/static/js/main.fe2f1080.js.map"
+    "main.7eec7868.js.map": "/copernicus_college/static/js/main.7eec7868.js.map"
   },
   "entrypoints": [
     "static/css/main.6deee241.css",
-    "static/js/main.fe2f1080.js"
+    "static/js/main.7eec7868.js"
   ]
 }
