@@ -11,20 +11,26 @@ class Footer extends Component {
   state = {
     langValue: "pl",
     secondListEn: [
-      { path: "o-nas", name: "About Us" },
-      { path: "fundacja-centrum-kopernika", name: "Copernicus Center Foundation" },
-      { path: "regulamin", name: "Terms of service" },
-      { path: "kodeks-honorowy", name: "Honor code" },
-      { path: "faq", name: "FAQ" },
-      { path: "kontakt", name: "Contact" },
+      { path: "/copernicus_college/o-nas", name: "About Us" },
+      {
+        path: "/copernicus_college/fundacja-centrum-kopernika",
+        name: "Copernicus Center Foundation",
+      },
+      { path: "/copernicus_college/regulamin", name: "Terms of service" },
+      { path: "/copernicus_college/kodeks-honorowy", name: "Honor code" },
+      { path: "/copernicus_college/faq", name: "FAQ" },
+      { path: "/copernicus_college/kontakt", name: "Contact" },
     ],
     secondListPl: [
-      { path: "o-nas", name: "O nas" },
-      { path: "fundacja-centrum-kopernika", name: "Fundacja Centrum Kopernika" },
-      { path: "regulamin", name: "Regulamin" },
-      { path: "kodeks-honorowy", name: "Kodeks honorowy" },
-      { path: "faq", name: "FAQ" },
-      { path: "kontakt", name: "Kontakt" },
+      { path: "/copernicus_college/o-nas", name: "O nas" },
+      {
+        path: "/copernicus_college/fundacja-centrum-kopernika",
+        name: "Fundacja Centrum Kopernika",
+      },
+      { path: "/copernicus_college/regulamin", name: "Regulamin" },
+      { path: "/copernicus_college/kodeks-honorowy", name: "Kodeks honorowy" },
+      { path: "/copernicus_college/faq", name: "FAQ" },
+      { path: "/copernicus_college/kontakt", name: "Kontakt" },
     ],
   };
 
@@ -57,7 +63,7 @@ class Footer extends Component {
         <section className="top_section">
           <div className="container">
             <div className="footer_about">
-              <NavLink className="link_reset" to="/">
+              <NavLink className="link_reset" to="/copernicus_college/">
                 <img src={collegeLogo} alt="Copernicus College" />
               </NavLink>
               <h4>Copernicus College</h4>

@@ -12,12 +12,12 @@ const ABCHeader = (props) => {
         </div>
         <ul className="header_nav">
           <li>
-            <NavLink exact to="/">
+            <NavLink exact to="/copernicus_college/">
               Start
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/abc/lista">
+            <NavLink exact to="/copernicus_college/abc/lista">
               ABC
             </NavLink>
           </li>

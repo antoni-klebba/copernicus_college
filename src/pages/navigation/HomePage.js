@@ -40,7 +40,7 @@ class HomePage extends Component {
             <section className="row">
               <div className="top_part">
                 <h2>Kursy</h2>
-                <NavLink className="link_reset" to="/kursy/lista">
+                <NavLink className="link_reset" to="/copernicus_college/kursy/lista">
                   Zobacz wszystkie
                 </NavLink>
               </div>
@@ -49,7 +49,7 @@ class HomePage extends Component {
             <section className="row">
               <div className="top_part">
                 <h2>Wykłady gościnne</h2>
-                <NavLink className="link_reset" to="/wyklady/lista">
+                <NavLink className="link_reset" to="/copernicus_college/wyklady/lista">
                   Zobacz wszystkie
                 </NavLink>
               </div>
@@ -58,7 +58,7 @@ class HomePage extends Component {
             <section className="row">
               <div className="top_part">
                 <h2>Podręczniki</h2>
-                <NavLink className="link_reset" to="/podreczniki/lista">
+                <NavLink className="link_reset" to="/copernicus_college/podreczniki/lista">
                   Zobacz wszystkie
                 </NavLink>
               </div>

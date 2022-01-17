@@ -10,7 +10,7 @@ const Navigation = (props) => {
     <div className="navigation">
       <div className="container">
         <div className="logo_container">
-          <NavLink to="/" exact>
+          <NavLink to="/copernicus_college/" exact>
             <img className="logo" src={logo1} alt="Copernicus College" />
           </NavLink>
         </div>

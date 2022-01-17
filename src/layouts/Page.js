@@ -23,15 +23,15 @@ const Page = (props) => {
   return (
     <Switch>
       {/* Only text pages */}
-      <Route path="/o-nas" component={AboutPage} />
-      <Route path="/fundacja-centrum-kopernika" component={FunCopCenter} />
-      <Route path="/regulamin" component={TermsOfUsePage} />
-      <Route path="/kodeks-honorowy" component={CodeOfHonorPage} />
-      <Route path="/faq" component={FAQPage} />
-      <Route path="/kontakt" component={ContactPage} />
+      <Route path="/copernicus_college/o-nas" component={AboutPage} />
+      <Route path="/copernicus_college/fundacja-centrum-kopernika" component={FunCopCenter} />
+      <Route path="/copernicus_college/regulamin" component={TermsOfUsePage} />
+      <Route path="/copernicus_college/kodeks-honorowy" component={CodeOfHonorPage} />
+      <Route path="/copernicus_college/faq" component={FAQPage} />
+      <Route path="/copernicus_college/kontakt" component={ContactPage} />
       {/* Complex pages */}
       <Route
-        path="/"
+        path="/copernicus_college/"
         exact
         render={() => (
           <HomePage
@@ -43,28 +43,32 @@ const Page = (props) => {
         )}
       />
       <Route
-        path="/kursy/lista"
+        path="/copernicus_college/kursy/lista"
         exact
         render={() => <CoursesPage coursesList={props.coursesList} />}
       />
       <Route
-        path="/wyklady/lista"
+        path="/copernicus_college/wyklady/lista"
         exact
         render={() => <LecturesPage lecturesList={props.lecturesList} />}
       />
-      <Route path="/abc/lista" exact render={() => <ABCPage videosList={props.videosList} />} />
       <Route
-        path="/podreczniki/lista"
+        path="/copernicus_college/abc/lista"
+        exact
+        render={() => <ABCPage videosList={props.videosList} />}
+      />
+      <Route
+        path="/copernicus_college/podreczniki/lista"
         exact
         render={() => <TextbooksPage textbooksList={props.textbooksList} />}
       />
       <Route
-        path="/wykladowcy/lista"
+        path="/copernicus_college/wykladowcy/lista"
         exact
         render={() => <InstructorsPage instructorsList={props.instructorsList} />}
       />
       <Route
-        path="/kategorie/lista"
+        path="/copernicus_college/kategorie/lista"
         exact
         render={() => <CategoriesPage categoriesList={props.categoriesList} />}
       />

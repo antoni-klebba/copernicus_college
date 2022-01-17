@@ -42,12 +42,12 @@ class ABCVideo extends Component {
           </div>
         </div>
         <div className="text">
-          <NavLink className="link_reset" to={`/abc/${path}`}>
+          <NavLink className="link_reset" to={`/copernicus_college/abc/${path}`}>
             {title}
           </NavLink>
         </div>
         <div className="hidden_button hidden">
-          <NavLink className="link_reset" to={`/abc/${path}`}>
+          <NavLink className="link_reset" to={`/copernicus_college/abc/${path}`}>
             Zobacz więcej
           </NavLink>
         </div>

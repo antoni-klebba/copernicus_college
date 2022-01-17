@@ -14,13 +14,37 @@ const Header = (props) => {
   return (
     <div className="header">
       <Switch>
-        <Route path="/" exact render={() => <HomeHeader lang={lang} />} />
-        <Route path="/kursy/lista" exact render={() => <CoursesHeader lang={lang} />} />
-        <Route path="/wyklady/lista" exact render={() => <LecturesHeader lang={lang} />} />
-        <Route path="/abc/lista" exact render={() => <ABCHeader lang={lang} />} />
-        <Route path="/podreczniki/lista" exact render={() => <TextbooksHeader lang={lang} />} />
-        <Route path="/wykladowcy/lista" exact render={() => <InstructorsHeader lang={lang} />} />
-        <Route path="/kategorie/lista" exact render={() => <CategoriesHeader lang={lang} />} />
+        <Route path="/copernicus_college/" exact render={() => <HomeHeader lang={lang} />} />
+        <Route
+          path="/copernicus_college/kursy/lista"
+          exact
+          render={() => <CoursesHeader lang={lang} />}
+        />
+        <Route
+          path="/copernicus_college/wyklady/lista"
+          exact
+          render={() => <LecturesHeader lang={lang} />}
+        />
+        <Route
+          path="/copernicus_college/abc/lista"
+          exact
+          render={() => <ABCHeader lang={lang} />}
+        />
+        <Route
+          path="/copernicus_college/podreczniki/lista"
+          exact
+          render={() => <TextbooksHeader lang={lang} />}
+        />
+        <Route
+          path="/copernicus_college/wykladowcy/lista"
+          exact
+          render={() => <InstructorsHeader lang={lang} />}
+        />
+        <Route
+          path="/copernicus_college/kategorie/lista"
+          exact
+          render={() => <CategoriesHeader lang={lang} />}
+        />
       </Switch>
     </div>
   );

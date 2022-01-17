@@ -12,12 +12,12 @@ const TextbooksHeader = (props) => {
       </div>
       <ul className="header_nav">
         <li>
-          <NavLink exact to="/">
+          <NavLink exact to="/copernicus_college/">
             Start
           </NavLink>
         </li>
         <li>
-          <NavLink exact to="/podreczniki/lista">
+          <NavLink exact to="/copernicus_college/podreczniki/lista">
             {props.lang === "pl" ? "Podręczniki" : "Textbooks"}
           </NavLink>
         </li>

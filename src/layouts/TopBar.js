@@ -27,7 +27,7 @@ class TopBar extends Component {
               {this.props.lang === "pl" ? "Logowanie" : "Log In"}
             </button>
             <span className="separate">|</span>
-            <Link link_reset to="/rejestracja">
+            <Link link_reset to="/copernicus_college/rejestracja">
               <span>
                 <i className="far fa-edit"></i>
               </span>
