@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/copernicus_college/static/css/main.6deee241.css",
+    "main.js": "/copernicus_college/static/js/main.fe2f1080.js",
+    "static/media/textbooks_banner.jpg": "/copernicus_college/static/media/textbooks_banner.d73f2efc97abf490ba74.jpg",
+    "static/media/courses_banner.jpg": "/copernicus_college/static/media/courses_banner.fcbcf1aede8af932fe8a.jpg",
+    "static/media/lectures_banner.jpg": "/copernicus_college/static/media/lectures_banner.b1f8c2ff9038eec2057d.jpg",
+    "static/media/interdyscyplinarnosc-w-naukach-humanistycznych-i-spolecznych..png": "/copernicus_college/static/media/interdyscyplinarnosc-w-naukach-humanistycznych-i-spolecznych..11d0b132e69300e5078d.png",
+    "static/media/instructors_banner.jpg": "/copernicus_college/static/media/instructors_banner.a2d26d88683bb2af4173.jpg",
+    "static/media/home_banner.jpg": "/copernicus_college/static/media/home_banner.1c1503a34ff51144725f.jpg",
+    "static/media/ned-block.png": "/copernicus_college/static/media/ned-block.fb417f6da8e5f8cf6934.png",
+    "static/media/metodologia-nauk-spolecznych-i-humanistycznych.png": "/copernicus_college/static/media/metodologia-nauk-spolecznych-i-humanistycznych.f5f9cb0fd8404be7c798.png",
+    "static/media/grzegorz-blicharz.png": "/copernicus_college/static/media/grzegorz-blicharz.80de309df0727bcbe35a.png",
+    "static/media/michael-arbib.png": "/copernicus_college/static/media/michael-arbib.f2a55ab2e0db55d04ac4.png",
+    "static/media/marco-bersanelli.png": "/copernicus_college/static/media/marco-bersanelli.8288c34411d9663f6e76.png",
+    "static/media/marek-binder.png": "/copernicus_college/static/media/marek-binder.4399a71e01062950d492.png",
+    "static/media/wprowadzenie-do-filozofii-nauki.png": "/copernicus_college/static/media/wprowadzenie-do-filozofii-nauki.09e39feb0b6a1e1024d1.png",
+    "static/media/kognitywistyka-w-praktyce.png": "/copernicus_college/static/media/kognitywistyka-w-praktyce.cb65be8f96ec4678da85.png",
+    "static/media/anarchizm_metodologiczny.jpg": "/copernicus_college/static/media/anarchizm_metodologiczny.b1e1b654d6f235af3153.jpg",
+    "static/media/neuronalny_korelat.jpg": "/copernicus_college/static/media/neuronalny_korelat.e3d58157ed3b1c2c6232.jpg",
+    "static/media/hipoteza_ad_hoc.jpg": "/copernicus_college/static/media/hipoteza_ad_hoc.56c21f87549af051b4c0.jpg",
+    "static/media/eksperyment.jpg": "/copernicus_college/static/media/eksperyment.2d4e9c28799857c5c957.jpg",
+    "static/media/czy_nauka_jest_wiedza.jpg": "/copernicus_college/static/media/czy_nauka_jest_wiedza.f3cb6a9c58a9131b2db7.jpg",
+    "static/media/trudny_i_latwy.jpg": "/copernicus_college/static/media/trudny_i_latwy.7f06307021e4c1d02e0e.jpg",
+    "static/media/swiadomosc_jako_przedmiot.jpg": "/copernicus_college/static/media/swiadomosc_jako_przedmiot.d2b939d62ce3751010fe.jpg",
+    "static/media/metody_badania_swiadomosci.jpg": "/copernicus_college/static/media/metody_badania_swiadomosci.b7c155b2a527add082c2.jpg",
+    "static/media/biologia-ewolucyjna-intuicyjne-wprowadzenie.png": "/copernicus_college/static/media/biologia-ewolucyjna-intuicyjne-wprowadzenie.5e9f841d68cae08c284c.png",
+    "static/media/copernicus_college_logo2.png": "/copernicus_college/static/media/copernicus_college_logo2.ad4938a2984691201c3b.png",
+    "static/media/wstep-do-biblistyki.png": "/copernicus_college/static/media/wstep-do-biblistyki.b51d2f6091ee8fd0a2c5.png",
+    "static/media/nauka-a-religia-cz-1.png": "/copernicus_college/static/media/nauka-a-religia-cz-1.ac50724a35efe7b2daaf.png",
+    "static/media/uniwersytet_logo.png": "/copernicus_college/static/media/uniwersytet_logo.6f16e7d9c488a71484b6.png",
+    "static/media/copernicus_center_logo.png": "/copernicus_college/static/media/copernicus_center_logo.3a92a4eb20112d5089a4.png",
+    "static/media/wprowadzenie-do-filozofii-umyslu-i-kognitywistyki.png": "/copernicus_college/static/media/wprowadzenie-do-filozofii-umyslu-i-kognitywistyki.7e9be1afbf7c5a3d725f.png",
+    "static/media/joana-barcik.png": "/copernicus_college/static/media/joana-barcik.e557ebafd7851640dbd3.png",
+    "index.html": "/copernicus_college/index.html",
+    "main.6deee241.css.map": "/copernicus_college/static/css/main.6deee241.css.map",
+    "main.fe2f1080.js.map": "/copernicus_college/static/js/main.fe2f1080.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6deee241.css",
+    "static/js/main.fe2f1080.js"
+  ]
+}
